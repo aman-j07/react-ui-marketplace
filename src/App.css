@@ -1,0 +1,388 @@
+/* variables  */
+:root {
+    --pad: 100px;
+}
+
+/* Fonts imported */
+@font-face {
+    font-family: Moderat;
+    src: url('../public/assets/fonts/Moderat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Heldane Display;
+    src: url('../public/assets/fonts/TestHeldaneDisplay-Regular.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+/* Universal CSS */
+body,
+* {
+    margin: 0;
+}
+
+#root {
+    background-color: #0000002e;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.row--centeraligned {
+    display: flex;
+    align-items: center;
+}
+
+.row--between {
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.linktxt {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    padding: 14px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: Moderat;
+    border: 1px solid;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: #413DEE;
+    border: none;
+    color: white;
+}
+
+.btn--link {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+.card {
+    box-shadow: 0px 8px 20px 0px #00000014;
+    border-radius: 20px;
+    padding: 20px 15px;
+    max-width: 250px;
+    gap: 30px;
+    font-family: Heldane Display;
+    background: #FFFFFF;
+}
+
+.card__image {
+    max-width: 100%;
+}
+
+.card__body {
+    gap: 20px;
+}
+
+.card__price {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card__title {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card__cta {
+    flex-grow: 0.65;
+}
+
+.box {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Moderat;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.box--primary {
+    color: #413DEE;
+    background: rgba(65, 61, 238, 0.1);
+}
+
+.box--danger {
+    color: #EB3131;
+    background: rgba(235, 49, 49, 0.1);
+}
+
+.box--circle {
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+/* Header CSS */
+.header {
+    padding: 33px var(--pad);
+    font-family: Moderat;
+}
+
+.header__toggler {
+    display: none;
+    padding: 0;
+}
+
+.header__logo {
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.header__navgrp {
+    flex-grow: 0.7;
+    transition: all 500ms;
+}
+
+.header__navlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__navlist--pages {
+    flex-grow: 0.5;
+}
+
+.header__navlist--useroptions {
+    gap: 20px;
+}
+
+
+/* Main CSS */
+.hero {
+    padding: 50px 0px 50px var(--pad);
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content__lg {
+    font-size: 64px;
+    font-family: Heldane Display;
+    line-height: 80px;
+}
+
+.hero__image {
+    max-width: 550px;
+}
+
+/* Products Gallery CSS */
+.productsgallery__name {
+    background: #F8F8F8;
+    padding: 51px var(--pad);
+    font-family: Moderat;
+}
+
+.productsgallery__products {
+    padding: 40px var(--pad) 80px;
+    flex-wrap: wrap;
+}
+
+/* Newsletter section CSS */
+.newsletter {
+    padding: 100px 0;
+}
+
+.newsletter__wrapper {
+    padding: 98px 10px;
+    background: #413DEE;
+    border-radius: 20px;
+    color: white;
+    margin: 0 var(--pad);
+    text-align: center;
+}
+
+.newsletter__head {
+    font-size: 50px;
+    font-family: Heldane display;
+    font-weight: 400;
+}
+
+.newsletter__subhead {
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 25px;
+}
+
+.inpgrp {
+    margin: auto;
+    max-width: 520px;
+    padding: 8px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.inpgrp input {
+    border: 0;
+    font-family: 'DM Sans', sans-serif;
+    flex-grow: 1;
+}
+
+.inpgrp input:focus {
+    outline: none;
+}
+
+.inpgrp button {
+    border-radius: 100px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Footer CSS */
+.footer {
+    font-family: 'DM Sans', sans-serif;
+    padding: 63px var(--pad) 0;
+    display: flex;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.footer__part {
+    max-width: 300px;
+}
+
+.footer__head {
+    font-family: Heldane Display;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.footer__txt {
+    line-height: 32px;
+}
+
+.footer__linklist {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__link {
+    margin-bottom: 10px;
+}
+
+.footer__socialgrp {
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* Media Query */
+@media (width < 1050px) {
+    :root {
+        --pad: 30px
+    }
+
+    .hero {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero__image {
+        border-radius: 25px;
+    }
+
+    .productsgallery__products {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer {
+        gap: 20px;
+        justify-content: start;
+    }
+
+    .footer__part {
+        margin-bottom: 10px;
+    }
+}
+
+@media (width < 600px) {
+    :root {
+        --pad: 15px
+    }
+
+    .hero__image {
+        max-width: 90%;
+    }
+}
+
+@media (width < 750px) {
+    .header__toggler {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .header__navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header__navgrp {
+        display: block;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .header__navgrp--open {
+        height: 230px;
+    }
+
+    .header__navgrp .header__navlist {
+        margin-bottom: 10px;
+    }
+
+    .header__navlist--pages {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (width < 400px) {
+    .btn {
+        font-size: 12px;
+    }
+
+    .newsletter__head {
+        font-size: 40px;
+    }
+
+    .newsletter__subhead {
+        font-size: 15px;
+    }
+
+    .inpgrp {
+        padding: 2px;
+    }
+
+    .inpgrp input {
+        font-size: 12px;
+        width: 50%;
+    }
+}
